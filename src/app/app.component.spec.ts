@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'nutri-track' title`, () => {
+  it(`should have the 'ejemploNav-user' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nutri-track');
+    expect(app.title).toEqual('ejemploNav-user');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, nutri-track');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ejemploNav-user');
   });
 });

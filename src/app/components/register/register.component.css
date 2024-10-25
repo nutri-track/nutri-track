@@ -1,0 +1,91 @@
+.modal-content {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* Limita el ancho máximo */
+    background-color: #fefefe;
+    position: relative; /* Necesario para el posicionamiento absoluto del botón de cerrar */
+}
+
+.close-button {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* Cambiado a absolute */
+    top: 10px; 
+    right: 20px; 
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre grupos de inputs */
+    width: 100%; 
+}
+
+.password-container {
+    display: flex; /*  flexbox para alinear el input y el botón */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.password-container input {
+    flex: 1; /* El input ocupa todo el espacio disponible */
+    margin-right: 10px; 
+}
+
+.toggle-password {
+    background-color: #008000; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.toggle-password:hover {
+    background-color: #005700; 
+}
+
+
+/* Media query para pantallas menores a 400px */
+@media (max-width: 400px) {
+    .modal-content {
+        width: 90%; /* Aumentar el ancho a un 90% para más espacio */
+        padding: 15px; /* Reducir el espaciado interno */
+    }
+
+    .close-button {
+        font-size: 24px; /* Reducir el tamaño del botón de cerrar */
+        right: 10px; /* Ajustar la posición del botón */
+        top: 5px; /* Ajustar la posición del botón */
+    }
+
+    h2 {
+        font-size: 20px; /* Reducir el tamaño de la fuente del título */
+    }
+
+    .form-group label {
+        font-size: 14px; /* Reducir el tamaño de la fuente de las etiquetas */
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 14px; /* Reducir el tamaño de la fuente de los inputs y selects */
+        padding: 8px; /* Ajustar el espaciado interno de los inputs */
+    }
+
+    button[type="submit"] {
+        font-size: 14px; /* Reducir el tamaño de la fuente del botón de enviar */
+        padding: 10px; /* Ajustar el espaciado interno del botón */
+    }
+}

@@ -1,0 +1,27 @@
+<app-register (userEmitter)="handleUser($event)" />
+
+<!-- Mostrar los datos del usuario -->
+<div *ngIf="user">
+    <h3>Usuario Registrado:</h3>
+    <p>Nombre: {{ user.dataUser.nombre }}</p>
+    <p>Apellido: {{ user.dataUser.apellido }}</p>
+    <p>Edad: {{ user.dataUser.edad }}</p>
+    <p>Género: {{ user.dataUser.genero }}</p>
+    <p>Peso: {{ user.dataUser.peso }} kg</p>
+    <p>Altura: {{ user.dataUser.altura }} cm</p>
+    <p>Perfil: {{ user.dataUser.perfil }}</p>
+    <p>Nivel de Actividad: {{ user.dataUser.nivelActividad }}</p>
+
+    <div *ngIf="user.dataUserNutricional.tmb">
+        <h2>Datos Nutricionales</h2>
+        <p><strong>Tasa Metabólica Basal (TMB):</strong> {{ user.dataUserNutricional.tmb }} kcal</p>
+        <p><strong>Gasto Energético Total (TDEE):</strong> {{ user.dataUserNutricional.tdee }} kcal</p>
+        <p><strong>Calorías Objetivo:</strong> {{ user.dataUserNutricional.caloriasObjetivo }} kcal</p>
+        <p><strong>Cantidad de macronutrientes sugeridos:</strong></p>
+        <ul>
+            <li><strong>Proteínas:</strong> {{ user.dataUserNutricional.macronutrientes.proteinas }} g</li>
+            <li><strong>Grasas:</strong> {{ user.dataUserNutricional.macronutrientes.grasas }} g</li>
+            <li><strong>Carbohidratos:</strong> {{ user.dataUserNutricional.macronutrientes.carbohidratos }} g</li>
+        </ul>
+    </div>
+</div>

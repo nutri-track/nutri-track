@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    --cal-poly-green: #004b23ff;
+    --office-green: #006400ff;
+    --office-green-2: #007200ff;
+    --office-green-3: #008000ff;
+    --kelly-green: #38b000ff;
+    --sgbus-green: #70e000ff;
+    --spring-bud: #9ef01aff;
+    --lime: #ccff33ff;
+}
+
+body{
+    margin: 0;
+    max-width: 1200vw;
+}
+

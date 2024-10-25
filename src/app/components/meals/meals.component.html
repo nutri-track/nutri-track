@@ -1,0 +1,11 @@
+<h2>Comidas</h2>
+<div *ngFor="let meal of meals">
+  <h3>{{ meal.name }}</h3>
+  <ul>
+    <li *ngFor="let food of meal.foods">
+      {{ food.description }} - Calorías: {{ getCalories(food) }}
+    </li>
+  </ul>
+  <p><strong>Total Calorías: {{ meal.totalCalories }}</strong></p>
+</div>
+
