@@ -1,0 +1,157 @@
+{
+  "users": [
+    {
+      "id": "7424",
+      "dataUser": {
+        "nombre": "Federico",
+        "apellido": "Sosa",
+        "email": "fede_mdq1@hotmail.com",
+        "password": "123456pass",
+        "edad": 28,
+        "peso": 77,
+        "altura": 170,
+        "genero": "masculino",
+        "perfil": "volumen",
+        "nivelActividad": "ligero"
+      },
+      "dataUserNutricional": {
+        "tmb": 1697.5,
+        "tdee": 2334.0625,
+        "caloriasObjetivo": 2567.46875,
+        "macronutrientes": {
+          "proteinas": 148,
+          "grasas": 71,
+          "carbohidratos": 333
+        }
+      }
+    },
+    {
+      "id": "b4b2",
+      "dataUser": {
+        "nombre": "zdffasfas",
+        "apellido": "asdasd",
+        "email": "sadasd@asdasd",
+        "password": "asdasdasd",
+        "edad": 28,
+        "peso": 80,
+        "altura": 170,
+        "genero": "masculino",
+        "perfil": "volumen",
+        "nivelActividad": "ligero"
+      },
+      "dataUserNutricional": {
+        "tmb": 1727.5,
+        "tdee": 2375.3125,
+        "caloriasObjetivo": 2612.84375,
+        "macronutrientes": {
+          "proteinas": 154,
+          "grasas": 73,
+          "carbohidratos": 336
+        }
+      }
+    },
+    {
+      "id": "337c",
+      "dataUser": {
+        "nombre": "Federico",
+        "apellido": "Sosa",
+        "email": "fede@gmail.com",
+        "password": "123456pass",
+        "edad": 28,
+        "peso": 70,
+        "altura": 170,
+        "genero": "masculino",
+        "perfil": "volumen",
+        "nivelActividad": "ligero"
+      },
+      "dataUserNutricional": {
+        "tmb": 1627.5,
+        "tdee": 2237.8125,
+        "caloriasObjetivo": 2461.59375,
+        "macronutrientes": {
+          "proteinas": 135,
+          "grasas": 68,
+          "carbohidratos": 327
+        }
+      }
+    }
+  ],
+  "meals": [
+    {
+      "userId": 1,
+      "comida": "Almuerzo",
+      "alimentos": [
+        {
+          "nombre": "Pollo a la plancha",
+          "cantidad": "200g"
+        },
+        {
+          "nombre": "Arroz integral",
+          "cantidad": "150g"
+        },
+        {
+          "nombre": "Ensalada mixta",
+          "cantidad": "1 porción"
+        }
+      ],
+      "id": "e52d"
+    },
+    {
+      "userId": 1,
+      "comida": "Cena",
+      "alimentos": [
+        {
+          "nombre": "Pescado al horno",
+          "cantidad": "180g"
+        },
+        {
+          "nombre": "Quinoa",
+          "cantidad": "100g"
+        },
+        {
+          "nombre": "Brócoli al vapor",
+          "cantidad": "1 porción"
+        }
+      ],
+      "id": "142c"
+    },
+    {
+      "userId": 2,
+      "comida": "Desayuno",
+      "alimentos": [
+        {
+          "nombre": "Avena",
+          "cantidad": "50g"
+        },
+        {
+          "nombre": "Leche descremada",
+          "cantidad": "200ml"
+        },
+        {
+          "nombre": "Fruta fresca",
+          "cantidad": "1 pieza"
+        }
+      ],
+      "id": "5015"
+    },
+    {
+      "userId": 2,
+      "comida": "Merienda",
+      "alimentos": [
+        {
+          "nombre": "Yogur natural",
+          "cantidad": "150g"
+        },
+        {
+          "nombre": "Nueces",
+          "cantidad": "30g"
+        },
+        {
+          "nombre": "Tostadas integrales",
+          "cantidad": "2 rebanadas"
+        }
+      ],
+      "id": "8a4a"
+    }
+  ]
+}

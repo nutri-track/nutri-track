@@ -1,0 +1,22 @@
+<h2>Resultados para "{{ foodItem }}"</h2>
+<input type="text" [(ngModel)]="foodItem" (input)="onSearchChange()" placeholder="Buscar alimento..." />
+
+<ul>
+  <li *ngFor="let food of foodData">
+    <p>{{ food.description }}</p>
+    <p>Calorías: {{ foodNutritionalInfo[food.description].calories }}</p>
+    <p>Proteínas: {{ foodNutritionalInfo[food.description].protein }}</p>
+    <p>Carbohidratos: {{ foodNutritionalInfo[food.description].carbs }}</p>
+    <p>Grasas: {{ foodNutritionalInfo[food.description].fat }}</p>
+
+    <select [(ngModel)]="selectedMeal">
+      <option value="" disabled>Selecciona una comida</option>
+      <option value="Breakfast">Desayuno</option>
+      <option value="Lunch">Almuerzo</option>
+      <option value="Dinner">Cena</option>
+      <option value="Snack">Snack</option>
+    </select>
+
+    <button (click)="addFoodToMeal(food)">Agregar</button>
+  </li>
+</ul>

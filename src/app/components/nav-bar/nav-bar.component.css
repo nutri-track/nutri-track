@@ -1,0 +1,86 @@
+nav {
+    background-color: var(--kelly-green);
+    display: flex;
+    justify-content: center; /* Centrar los elementos en el navbar */
+    align-items: center;
+    padding: 10px 20px; /* Ajusta el padding para mejor espaciado */
+    max-width: 100vw;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Hacer que los enlaces ocupen todo el espacio disponible */
+    gap: 1.5rem; /* Aumenta el espacio entre los enlaces */
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0; /* Quita el margen adicional */
+}
+
+.nav-buttons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.nav-buttons li {
+    margin-left: 0; /* Quita el margen izquierdo */
+}
+
+a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none; /* Eliminamos el subrayado en todos los enlaces */
+    border-radius: 4px;
+    padding: 8px 12px; /* Aumenta el padding para mejorar el área de clic */
+    color: ghostwhite;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+a:hover {
+    background-color: ghostwhite;
+    color: #008000;
+}
+
+.nav-buttons button {
+    background-color: #FFD700; /* Fondo amarillo */
+    color: #008000; /* Texto en verde */
+    font-size: 1rem; /* Tamaño de fuente */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones para hover */
+}
+
+/* Efecto hover */
+.nav-buttons button:hover {
+    background-color: #FFC107; /* Un tono más oscuro de amarillo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+@media (max-width: 430px) {
+    nav {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Cambia la dirección a columna para el menú */
+        gap: 10px; /* Espacio entre los enlaces en móviles */
+        align-items: center;
+    }
+
+    .nav-buttons {
+        flex-direction: column; /* Cambia a columna para los botones también */
+        margin-top: 10px;
+        align-items: center;
+    }
+}
